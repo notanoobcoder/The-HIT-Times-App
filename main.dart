@@ -52,7 +52,7 @@ class _MyTabs extends State<MyPage> with SingleTickerProviderStateMixin {
     return new Scaffold(
         appBar: new AppBar(
           title: new Text("The HIT Times"),
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.blue,
         ),
         body: new PageView(
             children: [
@@ -88,7 +88,7 @@ class _MyTabs extends State<MyPage> with SingleTickerProviderStateMixin {
     // You can use whatever duration and curve you like
     _pageController.animateToPage(
         page,
-        duration: const Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 150),
         curve: Curves.ease
     );
   }
