@@ -5,6 +5,7 @@ import './RightPage.dart' as right;
 
 void main() {
   runApp(new MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: new MyTabs()
   ));
 }
@@ -14,8 +15,7 @@ class MyTabs extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'The HIT Times',
-      home: new MyPage(),
-      color: Colors.green[900]
+      home: new MyPage()
     );
   }
 }
@@ -54,7 +54,7 @@ class _MyTabs extends State<MyPage> with SingleTickerProviderStateMixin {
     return new Scaffold(
         appBar: new AppBar(
           title: new Text("The HIT Times"),
-          backgroundColor: Colors.green[900],
+          backgroundColor: Colors.blue[350],
         ),
         body: new PageView(
             children: [
